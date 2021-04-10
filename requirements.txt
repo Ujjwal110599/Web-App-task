@@ -3,5 +3,5 @@ djangorestframework
 google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
-gunicorn==41.2.0
-whitenoise==5.2.0
+gunicorn==20.0.4
+whitenoise==5.0.1
