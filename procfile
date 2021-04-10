@@ -1,0 +1,1 @@
+web: gunicorn webappmidas.wsgi --log-file -
