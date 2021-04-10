@@ -135,7 +135,11 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
-
+MEDIA_URL = '/images/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+]
+MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY='499712824905-6hovlt0vk8oi42juefe08m216njhear6.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET='w28bx_OPq4g2Pao_0pSqS_CV'
 
