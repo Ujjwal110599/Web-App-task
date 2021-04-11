@@ -136,12 +136,13 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'staticfiles'))
 
-MEDIA_URL = '/images/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'/static')
+    os.path.join(BASE_DIR,'static')
 ]
+MEDIA_URL = '/images/'
+
 MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY='499712824905-6hovlt0vk8oi42juefe08m216njhear6.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET='w28bx_OPq4g2Pao_0pSqS_CV'
