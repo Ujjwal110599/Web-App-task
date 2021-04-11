@@ -132,6 +132,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 STATIC_URL = '/static/'
@@ -139,7 +140,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 MEDIA_URL = '/images/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static')
+    os.path.join(BASE_DIR,'/static')
 ]
 MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY='499712824905-6hovlt0vk8oi42juefe08m216njhear6.apps.googleusercontent.com'
