@@ -1,0 +1,6 @@
+[type="radio"]:checked + label:after {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.0);
+    /* border: 2px solid black; */
+    top: 0;
+}
