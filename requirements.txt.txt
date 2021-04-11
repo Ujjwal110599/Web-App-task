@@ -5,3 +5,4 @@ google-auth-httplib2
 google-auth-oauthlib
 gunicorn==20.0.4
 whitenoise==5.0.1
+social-auth-app-django
