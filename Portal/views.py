@@ -5,7 +5,7 @@ from .forms import RegisterForm
 
 
 def index(request):
-    return render(request, 'index-1.html')
+    return render(request, 'index.html')
 
 
 def userlogin(request):
